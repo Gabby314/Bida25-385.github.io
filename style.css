@@ -5,7 +5,17 @@ body{
     padding:0;
     background-color:#d2f3fd;
 }
-  
+  .hero{
+height:100vh;
+background-image:url("download.png");
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+color:white;
+}
 nav{
     background:#000000;
     padding:15px;
@@ -57,6 +67,7 @@ footer{
     text-align:center;
     padding:20px;
 }
+
 
 
 
