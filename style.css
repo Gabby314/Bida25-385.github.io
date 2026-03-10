@@ -5,14 +5,7 @@ body{
     padding:0;
     background-color:#d2f3fd;
 }
-    .hero{
-    height:100vh;
-    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFxOKhVi2UjvIpp1E2hXUX10PLVH4QlC_IQ&s");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-}
-
+  
 nav{
     background:#000000;
     padding:15px;
@@ -64,6 +57,7 @@ footer{
     text-align:center;
     padding:20px;
 }
+
 
 
 
