@@ -7,7 +7,7 @@ body{
 }
     .hero{
     height:100vh;
-    background-image:url("errand.jpg");
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsFxOKhVi2UjvIpp1E2hXUX10PLVH4QlC_IQ&s");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -64,6 +64,7 @@ footer{
     text-align:center;
     padding:20px;
 }
+
 
 
 
