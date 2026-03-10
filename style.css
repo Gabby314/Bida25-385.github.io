@@ -12,3 +12,43 @@ body {
 
     line-height: 1.6; 
 }
+
+} header { 
+
+    background-color: #000000; 
+
+    color: white; 
+
+    padding: 20px; 
+
+    text-align: center; 
+
+} 
+
+ 
+
+header h1 { 
+
+    margin: 0; 
+
+} 
+
+ 
+
+nav a { 
+
+    color: white; 
+
+    text-decoration: none; 
+
+    margin: 0 10px; 
+
+} 
+
+ 
+
+nav a:hover { 
+
+    text-decoration: underline; 
+
+} 
