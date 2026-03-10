@@ -5,6 +5,13 @@ body{
     padding:0;
     background-color:#d2f3fd;
 }
+    .hero{
+    height:100vh;
+    background-image:url("errand.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
 
 nav{
     background:#000000;
@@ -57,5 +64,6 @@ footer{
     text-align:center;
     padding:20px;
 }
+
 
 
