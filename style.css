@@ -38,4 +38,55 @@ footer{
     text-align:center;
     padding:10px;
 }
+/* General Page Style */
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background-color:#f4f4f4;
+}
+
+/* Header */
+header{
+    background-color:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* Navigation Menu */
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+/* Page Sections */
+section{
+    padding:30px;
+    text-align:center;
+}
+
+/* Image Style */
+img{
+    width:100%;
+    max-width:800px;
+}
+
+/* Services List */
+ul{
+    list-style:none;
+    padding:0;
+}
+footer{
+    background-color:#2c3e50;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin-top:20px;
+}
 
