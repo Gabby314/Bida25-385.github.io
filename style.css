@@ -6,11 +6,11 @@
 }
 
 /* Body */
-body {
-    font-family: Arial, sans-serif;
+body {   font-family: Arial, sans-serif;
     background-color: #111;
-    color: #fff;
-}
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('https://i.pinimg.com/1200x/29/d1/3d/29d13d9a43887a14cfb17b0b21574a1a.jpg') no-repeat center center fixed;
+    background-size: cover;
+        color: #fff }
 
 /* Navbar */
 nav {
