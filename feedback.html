@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback &amp; contact — Zois Cuts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+    <nav class="nav-bar" aria-label="Main">
+        <a class="logo" href="index.html">Zois Cuts</a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="page-hero">
+    <h1>Feedback &amp; contact</h1>
+    <p>Visit, call, or send a message — we read every note.</p>
+</div>
+
+<main id="main">
+
+<section class="section reveal" id="contact">
+    <h2>Contact &amp; visit</h2>
+    <div class="contact-block">
+        <p>Zois Cuts — Gaborone</p>
+        <p>Phone: <a href="tel:+2671234567">+267 123 4567</a></p>
+        <p class="contact-hours">Mon–Fri 8:00–19:00 · Sat 8:00–17:00 · Sun closed</p>
+        <p>To reserve a chair by service and time, use <a class="inline-link" href="services.html#book">Book on Services</a>.</p>
+        <div class="social-bubbles" aria-label="Social links">
+            <a class="social-bubble social-facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a class="social-bubble social-whatsapp" href="https://wa.me/2671234567" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="social-bubble social-instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+    </div>
+</section>
+
+<section class="section reveal" id="feedback">
+    <h2>Reviews &amp; comments</h2>
+    <p class="section-intro">Share your rating and comments. New reviews appear below instantly.</p>
+    <div class="form-wrap">
+        <form data-feedback-form>
+            <label for="fb-name">Your name</label>
+            <input id="fb-name" type="text" name="name" placeholder="Your name" autocomplete="name" required minlength="2">
+
+            <label for="fb-rating">Rating</label>
+            <select id="fb-rating" name="rating" required>
+                <option value="">Choose rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Fair</option>
+                <option value="1">1 - Needs work</option>
+            </select>
+
+            <label for="fb-text">Your feedback</label>
+            <textarea id="fb-text" name="feedback" placeholder="Write your review or comment..." required minlength="10"></textarea>
+
+            <button type="submit" class="btn-submit">Submit</button>
+            <p class="form-message" role="status" aria-live="polite"></p>
+        </form>
+    </div>
+
+    <div class="reviews-panel">
+        <div class="reviews-panel-head">
+            <h3>Recent customer reviews</h3>
+            <div class="review-sort-controls" role="group" aria-label="Sort reviews">
+                <button type="button" class="sort-btn is-active" data-sort="newest">Newest</button>
+                <button type="button" class="sort-btn" data-sort="highest">Highest rating</button>
+            </div>
+        </div>
+        <div class="reviews-list" data-feedback-list></div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© <span id="year">2026</span> Zois Cuts</p>
+</footer>
+
+</body>
+</html>
+
+
