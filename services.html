@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services — Zois Cuts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+    <nav class="nav-bar" aria-label="Main">
+        <a class="logo" href="index.html">Zois Cuts</a>
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="page-hero">
+    <h1>Our services</h1>
+    <p>Pick a service below — we open the booking form with your choice filled in.</p>
+</div>
+
+<main id="main" data-services-page>
+
+    <section class="section reveal" aria-labelledby="menu-heading">
+        <h2 id="menu-heading">Menu</h2>
+        <p class="section-intro section-intro--tight">Tap a card to book that service.</p>
+        <div class="cards cards--services">
+            <button type="button" class="card card-selectable" data-service-key="haircut" data-service-label="Haircut" data-price="P80" aria-pressed="false">
+                <h3>Haircut</h3><p class="price">P80</p><span class="card-hint">Tap to book</span>
+            </button>
+            <button type="button" class="card card-selectable" data-service-key="beard" data-service-label="Beard trim" data-price="P50" aria-pressed="false">
+                <h3>Beard trim</h3><p class="price">P50</p><span class="card-hint">Tap to book</span>
+            </button>
+            <button type="button" class="card card-selectable" data-service-key="fullgroom" data-service-label="Full groom" data-price="P120" aria-pressed="false">
+                <h3>Full groom</h3><p class="price">P120</p><span class="card-hint">Tap to book</span>
+            </button>
+        </div>
+    </section>
+
+    <section class="section reveal booking-section" id="book">
+        <h2>Book your appointment</h2>
+        <p class="section-intro">Send a request — we will confirm by phone. (Demo form: nothing is sent to a server yet.)</p>
+        <div class="form-wrap form-wrap--wide">
+            <form data-booking-form>
+                <label for="book-service">Service</label>
+                <input id="book-service" type="text" name="service" readonly required placeholder="Choose a service from the menu above" autocomplete="off">
+
+                <label for="book-name">Your name</label>
+                <input id="book-name" type="text" name="customer_name" placeholder="Full name" autocomplete="name" required minlength="2">
+
+                <label for="book-phone">Phone</label>
+                <input id="book-phone" type="tel" name="phone" placeholder="+267 …" autocomplete="tel" required minlength="8">
+
+                <label for="book-date">Preferred date</label>
+                <input id="book-date" type="date" name="date" required>
+
+                <label for="book-time">Preferred time</label>
+                <select id="book-time" name="time" required>
+                    <option value="">Select a time</option>
+                    <option>08:00</option><option>09:00</option><option>10:00</option>
+                    <option>11:00</option><option>12:00</option><option>13:00</option>
+                    <option>14:00</option><option>15:00</option><option>16:00</option>
+                    <option>17:00</option><option>18:00</option>
+                </select>
+
+                <label for="book-notes">Notes (optional)</label>
+                <textarea id="book-notes" name="notes" placeholder="Fade style, kids cut, etc."></textarea>
+
+                <button type="submit" class="btn-submit">Submit booking request</button>
+                <p class="form-message" role="status" aria-live="polite"></p>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© <span id="year">2026</span> Zois Cuts</p>
+</footer>
+
+</body>
+</html>
